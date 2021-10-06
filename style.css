@@ -1,0 +1,260 @@
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Varibales */
+:root{
+    --navbar-height:50px;
+}
+
+/* Navigation Bar :  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar : Logo and Image  */
+
+.logo{
+    margin: 2px 34px;
+}
+.logo img{
+   height: 60px;
+   width: 60px;
+   margin: 3px 5px;
+}
+/* Navigation Bar : List Styling  */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+    
+}
+#navbar ul li{
+    color: black;
+    list-style: none;
+}
+#navbar ul li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 20px;
+    /* font-size: larger; */
+    font-family: 'Baloo Bhai 2';
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+    
+}
+ /* ****************** Navigation get's completed ************     */
+
+ /* Home Section  */
+ #home{
+     display: flex;
+     flex-direction: column;
+     /* border: 2px solid red; */
+     justify-content: center; 
+     align-items: center;
+     padding: 3px 50px;
+     height: 397px;
+    
+     
+ }
+
+ #home::before{
+    content: " ";
+    position: absolute;
+    background: url('pehli1.jpeg' ) no-repeat center center/cover;
+    /* background-color: rgb(39, 38, 38); */
+    top: 0px;
+    left: 0px;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.96;
+    
+}
+
+ #home h1{
+     color:white ;
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+    }
+     
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.0rem;
+        font-family: 'Baloo Bhai 2';
+   }
+   .btn:hover{
+       background-color: azure;
+       color: black;
+   }
+
+   /* Services Section  */
+   #services{
+       margin: 10px;
+       display: flex;
+   } 
+   #services .box{
+        /* display: flex; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        border: 2px solid brown;
+        padding: 24px;
+        margin: 0px 10px;
+        border-radius: 23px;
+        background-color: rgb(236 236 236);
+        
+        
+   } 
+   #services .box img{
+       height: 130px;
+       display: block;
+       margin: auto;
+       
+   } 
+   #services p{
+    font-family: 'Bree Serif', serif;
+
+  }
+  
+  /* Sponsors Section  */
+  #sponsor-section{
+    /* height: 344px; */
+    position: relative;
+    top: 0px;
+  }
+  #sponsors{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sponsor-item{
+    padding:  34px;
+}
+.sponsor-section::before{
+    content: " ";
+    position: absolute;
+    /* background: url('./images.jpeg'); */
+    background-color: rgb(188 173 173);
+    z-index: -1;
+    width: 100%;
+    height: 39%;
+    left: 0px;
+    opacity: 0.60;
+    
+}
+#sponsors img{
+     height: 123px;
+ }    
+
+ /* Contact Section  */
+
+   #contact{
+     position: relative;
+     
+    }  
+
+   
+   #contact::before{
+       content: " ";
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       left: 0px;
+       /* background-color: rgb(235, 43, 91); */
+       background: url('images.jpeg') no-repeat center center/cover;
+       z-index: -1;
+       /* opacity: 0.1; */
+    }   
+
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+
+     #contact-box input,
+     #contact-box textarea{
+         width: 100%;
+         padding: 0.3rem;
+         border-radius: 13px;
+         font-size: 1.0rem;
+         
+        }
+        #contact-box form{
+            width: 40%;
+        }
+        #contact-box label{
+            font-family: 'Bree Serif', serif;
+            font-size:1.0rem ;
+            color: aliceblue;
+            
+      
+        }
+     footer{
+       background: rgb(190, 58, 58);
+       color: white;
+       padding: 15px 20px;
+   }
+
+    /* Utility Classes */
+ .h-primary{
+    font-family: 'Baloo Bhai 2',cursive;
+ 
+    font-size: 2.0rem;
+     padding: 12px;
+ }
+ .h-secondary{
+    font-family: 'Bree Serif', serif;
+
+    font-size: 1.4rem;
+     padding: 12px;
+ }
+ .btn{
+     padding: 6px 20px;
+     border: 2px solid wheat;
+     background-color: black;
+     color: bisque;
+     margin: 20px;
+     font-size: 1.5rem;
+     border-radius: 34px;
+     cursor: pointer;
+    }
+.centre{
+    text-align: center;
+}
+ /* Extra needed classes  */
+.white{
+    color: rgb(136, 134, 134);
+}
+.btnboy{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 13px;
+    
+}
